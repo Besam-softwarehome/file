@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+        }
+        .scroll-container {
+            width: 100vw;
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+            scrollbar-width: none; /* Hide scrollbar for Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+        }
+        .scroll-container::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for Chrome, Safari */
+        }
+        .page {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            scroll-snap-align: start;
+        }
+        .page:nth-child(1) { background: url('snack.jpg'); }
+        .page:nth-child(2) { background: url('snack2.jpg'); 
+        background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;}
+        .page:nth-child(3) { background: url('snack3.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;}
+        
+
+        .emoji {
+            position: absolute;
+            font-size: 50px;
+            opacity: 0.7;
+            animation: float 5s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        img {
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="scroll-container">
+    <div class="page">
+        <h2>Hi, Melody Musuku</h2>
+        <p>It all started when you were talking to your friend on the phone. He happens to be my
+             friend too, and he called me to talk to you. That moment changed everything. 
+             The moment I heard your voice I felt so different my blood moved a bit faster. 
+             Your voice is soft, smooth and hits a different nerve in me. I couldn't give my 
+             attention to anything else but you.</p>
+    </div>
+    <div class="page">
+        <h2>Growing Connection</h2>
+        <p>It’s crazy how life connects people in ways we never expect. I never imagined how much of an 
+            impact you would have on me. But with 
+            every conversation, something started growing, something real, something deep.  
+             You made me feel comfortable in a way that’s rare. You saw beyond what I said and 
+             understood the things I didn’t even know how to put into words. That’s something 
+             special, something I don’t take for granted.  
+             With you, I feel cared for in a way that’s both gentle and strong.
+            It’s in the way you laugh so contagiously, how you walk by dragging your feet which might
+            be weird but I find it cute and the way you allow me to express my profound
+            feelings towards you it's so amazing. Hearing your voice alone brings a kind of peace I
+            didn’t even realize I needed.  
+            It’s funny how someone can enter your life and, without even trying, make it better just
+            by being who they are. You’ve become someone I genuinely
+            care for, someone who makes me feel like home even through just words on a screen 
+            or the voice on the other side of the line.❤️</p>
+    </div>
+    <div class="page">
+        <h2>The Big Question</h2>
+        <p>From the moment we started talking, something about you felt different in the best way.
+             Every conversation, every laugh, and every little moment with you has made my world brighter. 
+             You’ve become the person I look forward to hearing from each and every day, the one who makes
+              my heart race in the sweetest way.<br>
+             I really like who I am with you. Today I confidently say I want you. <strong>You are one of
+             the things I'm sure of. </strong>  
+            So, today I want to set my boundaries around you by asking this question wrapped in all
+             the care, affection, and excitement I feel for you…  </p>
+        <h2>Will you be my girl and I your man each and every day?❤️</h2>
+    </div>
+</div>
+
+</body>
+</html>
